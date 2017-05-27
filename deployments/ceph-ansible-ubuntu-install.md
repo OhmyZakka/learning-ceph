@@ -86,14 +86,14 @@ $ ansible all -m ping
 $ git clone https://github.com/ceph/ceph-ansible.git
 $ cd ceph-ansible
 $ cp site.yml.sample site.yml
-$ cp group_vars/all.sample group_vars/all
-$ cp group_vars/mons.sample group_vars/mons
-$ cp group_vars/osds.sample group_vars/osds
+$ cp group_vars/all.yml.sample group_vars/all
+$ cp group_vars/mons.yml.sample group_vars/mons
+$ cp group_vars/osds.yml.sample group_vars/osds
 ```
 > 若要部署 rgw 與 mds 的話，需再執行以下指令：
 ```sh
-$ cp group_vars/mdss.sample group_vars/mdss
-$ cp group_vars/rgws.sample group_vars/rgws
+$ cp group_vars/mdss.yml.sample group_vars/mdss
+$ cp group_vars/rgws.yml.sample group_vars/rgws
 ```
 
 接著編輯```group_vars/all```檔案，修改以下內容：
